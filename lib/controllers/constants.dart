@@ -21,7 +21,7 @@ class Constants extends GetxController {
   var transparentColor = Colors.transparent;
   var darkColor = const Color.fromARGB(255, 8, 8, 26);
   var bodyTextColor = const Color.fromARGB(255, 46, 46, 46);
-  var appVersion = "1.0";
+  var appVersion = "1.11";
 
   String him = "Anthony";
   String her = "Agnes";
@@ -92,60 +92,52 @@ Couples only
 
 
 """;
-  String hym = "HYM LYRICS";
+  String hym = "HYMN LYRICS";
   List hyms = [
     {
-      "title": "Lord Over All",
+      "title": "Unending Praise",
       "content": """
-What a joy it is to serve You
-You took my place and made me Your glory
-What an honour it is to call You Lord
-You alone can raise and raze kings and kingdoms
+The earth is full of Your beauty
+Oceans roar Your praise
+Mountains stand in ovation
+Holy God
 
-You have never lost a battle
-You are Lord Commander of the Angel Armies
-You told us to use Your name Lord
-For nothing changes Your name
-But Your name changes everything
+The skies sing for joy
+Creation joins in chorus
+Singing unending praise
 
-Your name is holy
-Lord of my life, I serve You wholly
-Your word is truth and the only
-Yes we declare
-You are Lord over all
+Praise, blessing and glory
+Be to God, enthroned
+And to Christ the Lamb
+Forever and ever
 
-What a blessing it is to love You
-You said in Your word, all things are working together for me
-How can men try to overthrow You Lord God
-When Heaven’s Your throne
-And the earth is Your footstool
 
-You have never lost a battle
-You are Lord Commander of the Angel Armies
-You told us to use Your name Lord
-For nothing changes Your name
-But Your name changes everything
+Praise, blessing and glory
+Be to God, enthroned
+And to Christ the Lamb
+Forever and ever, Amen
 
-Your name is holy
-Lord of my life, I serve You wholly
-Your word is truth and the only
-Yes we declare
-You are Lord over all
+The earth is full of Your beauty
+Oceans roar Your praise
+Mountains stand in ovation
+Holy God
 
-I delight
-In Your warm embrace
-Ever joyful
-For Your grace
-You are God
-To every race
-Yes we declare
-You are Lord over all
+The skies sing for joy
+Creation joins in chorus
+Singing unending praise
 
-Your name is holy
-Lord of my life, I serve You wholly
-Your word is truth and the only
-Yes we declare
-You are Lord over all
+Praise, blessing and glory
+Be to God, enthroned
+And to Christ the Lamb
+Forever and ever
+
+Praise, blessing and glory
+Be to God, enthroned
+And to Christ the Lamb
+Forever and ever, Amen
+
+Amen
+Amen
 """
     },
     {

@@ -60,7 +60,7 @@ class CustomDrawer extends StatelessWidget {
                       ListTile(
                           leading: Icon(Icons.list,
                               color: constantValues.secondaryColor),
-                          title: const Text("Program"),
+                          title: const Text("Programme"),
                           onTap: () {
                             Scrollable.ensureVisible(
                                 weddingProgram.currentContext as BuildContext,
@@ -73,7 +73,7 @@ class CustomDrawer extends StatelessWidget {
                       ListTile(
                           leading: Icon(Icons.read_more,
                               color: constantValues.secondaryColor),
-                          title: const Text("Hym"),
+                          title: const Text("Hymn"),
                           onTap: () {
                             Scrollable.ensureVisible(
                                 hymLyrics.currentContext as BuildContext,

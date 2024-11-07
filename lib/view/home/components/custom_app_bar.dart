@@ -55,7 +55,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                       weddingProgram.currentContext as BuildContext,
                       duration: const Duration(seconds: 2));
                 },
-                child: const Text("Program")),
+                child: const Text("Programme")),
             SizedBox(width: size.width * 0.02),
             TextButton(
                 onPressed: () {
@@ -63,7 +63,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                       hymLyrics.currentContext as BuildContext,
                       duration: const Duration(seconds: 2));
                 },
-                child: const Text("Hym")),
+                child: const Text("Hymn")),
             SizedBox(width: size.width * 0.02),
             TextButton(
                 onPressed: () {

@@ -36,7 +36,7 @@ class AnimatedLoadingText extends StatelessWidget {
                     Shadow(
                         color: constantValues.primaryColor,
                         blurRadius: 10,
-                        offset: Offset(2, 2)),
+                        offset: const Offset(2, 2)),
                     Shadow(
                         color: constantValues.secondaryColor,
                         blurRadius: 10,

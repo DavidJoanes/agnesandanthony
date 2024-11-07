@@ -79,8 +79,8 @@ class _AnimatedImageContainerState extends State<AnimatedImageContainer>
                 widget.splashScreen!
                     ? 'assets/images/love.png'
                     : 'assets/images/love.png',
-                height: size.height * 0.04,
-                width: size.width * 0.02,
+                height: 200,
+                width: 180,
                 fit: BoxFit.cover,
               ),
             ),

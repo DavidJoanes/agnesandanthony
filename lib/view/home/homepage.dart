@@ -1158,7 +1158,7 @@ class _HomePageState extends State<HomePage> {
           key: home,
           children: [
             Container(
-              height: size.height * 0.6,
+              height: size.height * 0.7,
               decoration: BoxDecoration(
                   image: DecorationImage(
                 image: const AssetImage("assets/images/cover.jpg"),
@@ -1415,7 +1415,7 @@ class _HomePageState extends State<HomePage> {
               key: weddingProgram,
               children: [
                 Container(
-                  height: size.height * 0.9,
+                  height: size.height * 1.1,
                   decoration: BoxDecoration(
                       image: DecorationImage(
                     image: const AssetImage("assets/images/ocean.jpg"),
