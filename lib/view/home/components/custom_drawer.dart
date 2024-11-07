@@ -10,13 +10,15 @@ class CustomDrawer extends StatelessWidget {
       required this.aboutUs,
       required this.weddingProgram,
       required this.hymLyrics,
-      required this.ourStory});
+      required this.ourStory,
+      required this.memories});
 
   final Constants constantValues;
   final GlobalKey<State<StatefulWidget>> aboutUs;
   final GlobalKey<State<StatefulWidget>> weddingProgram;
   final GlobalKey<State<StatefulWidget>> hymLyrics;
   final GlobalKey<State<StatefulWidget>> ourStory;
+  final GlobalKey<State<StatefulWidget>> memories;
 
   @override
   Widget build(BuildContext context) {
@@ -90,6 +92,19 @@ class CustomDrawer extends StatelessWidget {
                           onTap: () {
                             Scrollable.ensureVisible(
                                 ourStory.currentContext as BuildContext,
+                                duration: const Duration(seconds: 2));
+                            context.pop();
+                          }),
+                      SizedBox(height: size.height * 0.01),
+                      const Divider(),
+                      SizedBox(height: size.height * 0.01),
+                      ListTile(
+                          leading: Icon(Icons.monochrome_photos,
+                              color: constantValues.secondaryColor),
+                          title: const Text("Memories"),
+                          onTap: () {
+                            Scrollable.ensureVisible(
+                                memories.currentContext as BuildContext,
                                 duration: const Duration(seconds: 2));
                             context.pop();
                           }),

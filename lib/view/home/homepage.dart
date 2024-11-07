@@ -75,11 +75,13 @@ class _HomePageState extends State<HomePage> {
                 memories: memories,
               ),
               endDrawer: CustomDrawer(
-                  constantValues: constantValues,
-                  aboutUs: aboutUs,
-                  weddingProgram: weddingProgram,
-                  hymLyrics: hymLyrics,
-                  ourStory: ourStory),
+                constantValues: constantValues,
+                aboutUs: aboutUs,
+                weddingProgram: weddingProgram,
+                hymLyrics: hymLyrics,
+                ourStory: ourStory,
+                memories: memories,
+              ),
               floatingActionButton: Container(
                 decoration: BoxDecoration(
                   color: constantValues.secondaryColor,
@@ -273,7 +275,7 @@ class _HomePageState extends State<HomePage> {
                                 Text(
                                   constantValues.summary2,
                                   textAlign: TextAlign.center,
-                                  maxLines: 2,
+                                  maxLines: 3,
                                 ),
                                 Text(
                                   constantValues.author,
@@ -567,7 +569,7 @@ class _HomePageState extends State<HomePage> {
                   top: size.height * 0.15,
                   left: size.width * 0.18,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: size.height * 0.1),
+                    padding: EdgeInsets.symmetric(vertical: size.height * 0.05),
                     child: SizedBox(
                       width: size.width * 0.65,
                       child: Text(
@@ -816,11 +818,11 @@ class _HomePageState extends State<HomePage> {
                                     style: GoogleFonts.lato(
                                         textStyle: TextStyle(
                                       color: constantValues.secondaryColor,
-                                      fontSize: size.width * 0.015,
+                                      fontSize: size.width * 0.02,
                                     ))),
                                 SizedBox(height: size.height * 0.02),
                                 SizedBox(
-                                    width: size.width * 0.7,
+                                    width: size.width * 0.8,
                                     child: Text(
                                       constantValues.aboutHim,
                                       textAlign: TextAlign.justify,
@@ -873,11 +875,11 @@ class _HomePageState extends State<HomePage> {
                                     style: GoogleFonts.lato(
                                         textStyle: TextStyle(
                                       color: constantValues.secondaryColor,
-                                      fontSize: size.width * 0.015,
+                                      fontSize: size.width * 0.02,
                                     ))),
                                 SizedBox(height: size.height * 0.02),
                                 SizedBox(
-                                    width: size.width * 0.7,
+                                    width: size.width * 0.8,
                                     child: Text(
                                       constantValues.aboutHer,
                                       textAlign: TextAlign.justify,
@@ -918,7 +920,7 @@ class _HomePageState extends State<HomePage> {
                   )),
                 ),
                 Positioned(
-                  top: size.height * 0.1,
+                  top: size.height * 0.08,
                   left: size.width * 0.4,
                   child: Text(
                     constantValues.program,
@@ -930,7 +932,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 Positioned(
-                    top: size.height * 0.2,
+                    top: size.height * 0.15,
                     left: size.width * 0.12,
                     child: Column(
                       children: [
@@ -943,21 +945,21 @@ class _HomePageState extends State<HomePage> {
                                 "Order of Service",
                                 style: TextStyle(
                                     color: constantValues.secondaryColor,
-                                    fontSize: size.width * 0.015),
+                                    fontSize: size.width * 0.02),
                                 maxLines: 2,
                               ),
                               Text(
                                 "Order of Photography",
                                 style: TextStyle(
                                     color: constantValues.secondaryColor,
-                                    fontSize: size.width * 0.015),
+                                    fontSize: size.width * 0.02),
                                 maxLines: 2,
                               ),
                             ],
                           ),
                         ),
                         SizedBox(
-                          width: size.width * 0.65,
+                          width: size.width * 0.75,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -967,7 +969,7 @@ class _HomePageState extends State<HomePage> {
                                   Text(constantValues.programDetails1,
                                       style: TextStyle(
                                           color: constantValues.primaryColor,
-                                          fontSize: size.width * 0.015),
+                                          fontSize: size.width * 0.018),
                                       maxLines: 200)
                                 ],
                               ),
@@ -977,7 +979,7 @@ class _HomePageState extends State<HomePage> {
                                   Text(constantValues.programDetails2,
                                       style: TextStyle(
                                           color: constantValues.primaryColor,
-                                          fontSize: size.width * 0.015),
+                                          fontSize: size.width * 0.018),
                                       maxLines: 200)
                                 ],
                               ),
@@ -1083,7 +1085,7 @@ class _HomePageState extends State<HomePage> {
                   top: size.height * 0.12,
                   left: size.width * 0.12,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: size.height * 0.1),
+                    padding: EdgeInsets.symmetric(vertical: size.height * 0.03),
                     child: SizedBox(
                       width: size.width * 0.75,
                       child: Text(

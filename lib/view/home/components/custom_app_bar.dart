@@ -80,7 +80,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                       duration: const Duration(seconds: 2));
                 },
                 child: const Text("Memories")),
-            SizedBox(width: size.width * 0.3),
+            SizedBox(width: size.width * 0.2),
           ],
         );
       } else {

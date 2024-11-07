@@ -22,7 +22,7 @@ class Constants extends GetxController {
   var transparentColor = Colors.transparent;
   var darkColor = const Color.fromARGB(255, 8, 8, 26);
   var bodyTextColor = const Color.fromARGB(255, 46, 46, 46);
-  var appVersion = "1.11";
+  var appVersion = "1.13";
 
   String him = "Anthony";
   String her = "Agnes";
@@ -43,13 +43,14 @@ Christ Embassy International, Worship Center Nsikak Eduok | Avenue off 2 lanes U
   String aboutHer =
       "She’s the light and joy in every room she enters — brilliant, compassionate, and full of life. From our earliest days as friends, she’s been my greatest source of strength and encouragement. Her faith is fierce, her laughter is contagious, and her heart is open and kind. With her deep devotion to God and her dedication to personal growth, she inspires me daily to be the best version of myself. She is my best friend, my love, and my forever love.";
   String program = "WEDDING PROGRAMME";
-  String ministers = """Officiating Ministers | Pastor Emmanuel Oche | Pastor Joseph Adebola | Deaconess Ann Ukpong
+  String ministers =
+      """Officiating Ministers | Pastor Emmanuel Oche | Pastor Joseph Adebola | Deaconess Ann Ukpong
 """;
   String programDetails1 = """
 
 -   Opening Prayer
 -   Music Prelude - LW singers
--   Bridal March - Lord Over All
+-   Bridal March - Unending Praise
 -   Giving of the bride
 
 -   Hymn 1 - Most Holy is your name
