@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:go_router/go_router.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:url_strategy/url_strategy.dart';
 import 'package:flutter/material.dart';
@@ -72,10 +73,14 @@ class MyApp extends StatelessWidget {
     var color = constantValues.defaultColor;
     return ChangeNotifierProvider<ThemeChanger>(
       create: (_) => ThemeChanger(ThemeData(
-          primarySwatch: MaterialColor(0xFFF4511E, color),
-          brightness: pageInfo.read("isDarkTheme")
-              ? Brightness.dark
-              : Brightness.light)),
+        primarySwatch: MaterialColor(0xFFF4511E, color),
+        colorScheme:
+            ColorScheme.fromSeed(seedColor: constantValues.secondaryColor),
+        useMaterial3: true,
+        textTheme: GoogleFonts.poppinsTextTheme(),
+        brightness:
+            pageInfo.read("isDarkTheme") ? Brightness.dark : Brightness.light,
+      )),
       child:
           MaterialAppWithTheme(router: router, constantValues: constantValues),
     );
@@ -98,23 +103,23 @@ class MaterialAppWithTheme extends StatelessWidget {
     return ChangeNotifierProvider(
         create: (context) => CustomStateModel(),
         child: MaterialApp.router(
-          debugShowCheckedModeBanner: false,
-          scrollBehavior: MyCustomScrollBehavior(),
-          routerConfig: _router,
-          title: "A&A",
-          theme: theme.getTheme(),
-          // ThemeData(
-          //     colorScheme: ColorScheme.fromSeed(
-          //         seedColor: constantValues.secondaryColor),
-          //     useMaterial3: true,
-          //     textTheme:
-          //         GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-          //             .apply(bodyColor: constantValues.secondaryColor)
-          //     // .copyWith(
-          //     //   bodyLarge: TextStyle(color: constantValues.bodyTextColor),
-          //     //   bodyMedium: TextStyle(color: constantValues.bodyTextColor)
-          //     // )
-          //     ),
-        ));
+            debugShowCheckedModeBanner: false,
+            scrollBehavior: MyCustomScrollBehavior(),
+            routerConfig: _router,
+            title: "A&A",
+            theme: theme.getTheme()
+            // ThemeData(
+            //     colorScheme: ColorScheme.fromSeed(
+            //         seedColor: constantValues.secondaryColor),
+            //     useMaterial3: true,
+            //     textTheme:
+            //         GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
+            //             .apply(bodyColor: constantValues.secondaryColor)
+            //     // .copyWith(
+            //     //   bodyLarge: TextStyle(color: constantValues.bodyTextColor),
+            //     //   bodyMedium: TextStyle(color: constantValues.bodyTextColor)
+            //     // )
+            //     ),
+            ));
   }
 }

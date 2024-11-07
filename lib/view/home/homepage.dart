@@ -97,15 +97,22 @@ class _HomePageState extends State<HomePage> {
                           "isDarkTheme", !pageInfo.read("isDarkTheme"));
                     });
                     themeChanger.setTheme(pageInfo.read("isDarkTheme")
-                        ? ThemeData.dark()
+                        ? ThemeData(
+                            primarySwatch: MaterialColor(
+                                0xFFF4511E, constantValues.defaultColor),
+                            textTheme: GoogleFonts.poppinsTextTheme(
+                                    Theme.of(context).textTheme)
+                                .apply(bodyColor: constantValues.primaryColor2),
+                            brightness: Brightness.dark,
+                          )
                         : ThemeData(
                             primarySwatch: MaterialColor(
                                 0xFFF4511E, constantValues.defaultColor),
-                            colorScheme: ColorScheme.fromSeed(
-                                seedColor: constantValues.secondaryColor),
-                            useMaterial3: true,
-                            textTheme: GoogleFonts.poppinsTextTheme(),
-                            brightness: Brightness.light));
+                            textTheme: GoogleFonts.poppinsTextTheme(
+                                    Theme.of(context).textTheme)
+                                .apply(bodyColor: constantValues.darkColor),
+                            brightness: Brightness.light,
+                          ));
                   },
                   icon: Icon(
                     pageInfo.read("isDarkTheme")
@@ -701,9 +708,10 @@ class _HomePageState extends State<HomePage> {
                           width: size.width * 0.5,
                           child: Text(
                             constantValues.locationDetails,
-                            style:
-                                TextStyle(color: constantValues.primaryColor,
-                              fontWeight: FontWeight.w600,),
+                            style: TextStyle(
+                              color: constantValues.primaryColor,
+                              fontWeight: FontWeight.w600,
+                            ),
                             maxLines: 2,
                           ),
                         ),
@@ -1216,9 +1224,10 @@ class _HomePageState extends State<HomePage> {
                           width: size.width * 0.7,
                           child: Text(
                             constantValues.locationDetails,
-                            style:
-                                TextStyle(color: constantValues.primaryColor,
-                              fontWeight: FontWeight.w600,),
+                            style: TextStyle(
+                              color: constantValues.primaryColor,
+                              fontWeight: FontWeight.w600,
+                            ),
                             maxLines: 10,
                           ),
                         ),

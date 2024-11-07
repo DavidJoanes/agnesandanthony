@@ -16,6 +16,7 @@ class Constants extends GetxController {
     900: const Color(0xFFBF360C),
   };
   var primaryColor = Colors.white;
+  var primaryColor2 = const Color.fromARGB(255, 246, 246, 246);
   var secondaryColor = Colors.deepOrange;
   var secondaryColor2 = Colors.redAccent;
   var transparentColor = Colors.transparent;
